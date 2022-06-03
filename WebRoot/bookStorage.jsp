@@ -43,6 +43,14 @@ caption {
     line-height:1.5em;
     outline: none;border: none;
 }
+a{
+	color:#32bd40;
+	font-size: 1.2em;
+	width:50%;
+	line-height:1.6em;
+	outline: none;border: none;
+	text-decoration: none;
+}
 </style>
 </head>
 <body align="center">
@@ -58,6 +66,7 @@ caption {
 			<th>作者</th>
 			<th>修改数量</th>
 			<th>删除</th>
+			<th>编辑</th>
 		</tr>
 		<c:set value="1" var="coun"></c:set>
 		<c:forEach items="${list2 }" var="book">
@@ -79,7 +88,17 @@ caption {
 				<form action="Delete" method="post" onsubmit="return check(this);">
 						<input type="hidden" name="id" value="${book.key }"> <input
 							type="submit" value="Delete" class="sub">
-					</form></td>
+					</form>
+				</td>
+<%--				<td>--%>
+<%--					<form action="Edit" method="post" onsubmit="return check(this);">--%>
+<%--						<input type="hidden" name="id" value="${book.key }"> <input--%>
+<%--							type="submit" value="Edit" class="sub">--%>
+<%--					</form></td>--%>
+				<td style="color: #116149"> <sub><a
+						href="EditBookInfo.jsp?id=${book.key }&name=${book.value.name }&price=${book.value.price}&bookCount=${book.value.bookCount}&author=${book.value.author}">Edit</a>
+				</sub>
+				</td>
 			</tr>
 		</c:forEach>
 
