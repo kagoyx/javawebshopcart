@@ -32,9 +32,6 @@ public class AddCart extends HttpServlet {
         }
         if (checked==null) {
             response.getWriter().print("<script> alert(\"Please select the books you want to buy! \");window.location.href='/javawebeclipseshopcart/DoGet';</script>");
-//            response.getWriter().print("<p>Please select the books you want to buy</p>");
-//			System.out.println("Please select the books you want to buy");
-//            response.sendRedirect("/javawebeclipseshopcart/showBook.jsp");
             return;
         }
 

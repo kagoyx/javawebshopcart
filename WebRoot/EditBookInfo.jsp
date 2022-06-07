@@ -11,33 +11,66 @@
 
 }
 .header{
-    width: 150px;
-    height: 50px;
-    margin: 50px auto;
-    line-height: 50px;
+    height: 120px;
 }
-.p{
-    width: 150px;
-    height: 50px;
+.htitle{
+    width: 400px;
+    margin: 50px auto;
+}
+li{
+    height: 40px;
+    list-style-type: none;
+    margin: 0 auto;
+
+}
+p{
+    font-size: 1.75em;
+}
+p input{
+    height: 30px;
+}
+.submit{
+    background: #32bd40;
+    color: #fff;
+    font-size: 1.25em;
+    width:50%;
+    line-height:1.5em;
+    outline: none;border: none;
+}
+.back{
+    background: #32bd40;
+    color: #fff;
+    font-size: 1.25em;
+    width:50%;
+    line-height:1.5em;
+    outline: none;border: none;
 }
     </style>
 </head>
 <div class="wrapper">
     <div class="header">
         <div class="htitle">
-            <h2>BookInfo</h2>
+            <h2 style="font-size: 4.5em;color:#006633;letter-spacing: 8px">Edit</h2>
         </div>
     </div>
     <body align="center">
-    <p>书名：${param.name }</p>
-    <p>价格： ${param.price }</p>
-    <p>作者： ${param.author }</p>
-    <p>库存： ${param.bookCount }</p>
 
-    <form action="showBook.jsp" method="post" onsubmit="return check(this)">
-        <input type="hidden" name="start" value="1">
-        <input type="submit" class="back" value="Back">
-    </form>
+<form action="Edit">
+    <input type="hidden" name="id" value="${param.id }">
+    <li><p>书名：<input type="text" value="${param.name}" name="name"></p></li>
+    <li><p>价格：<input type="text" value="${param.price}" name="price"></p></li>
+    <li><p>作者：<input type="text" value="${param.author}" name="Author"></p></li>
+    <li><p>库存：<input type="text" value="${param.bookCount}" name="bookCount"></p></li>
+    </br>
+    </br>
+    <input type="hidden" name="start" value="1">
+    <input type="submit" class="submit" value="Submit">
+</form>
+
+<form action="bookStorage.jsp" method="post" onsubmit="return check(this)" style="margin-top: 50px">
+    <input type="hidden" name="start" value="1">
+    <input type="submit" class="back" value="Back">
+</form>
     </body>
 </div>
 

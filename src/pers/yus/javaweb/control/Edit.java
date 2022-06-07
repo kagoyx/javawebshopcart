@@ -1,8 +1,4 @@
-package pers.yus.javaweb.control; /**
- * @Description: ${description}
- * @Author: kago
- * @Date: 2022/6/3 4:16 下午
- **/
+package pers.yus.javaweb.control;
 
 import pers.yus.javaweb.beans.Book;
 import pers.yus.javaweb.dao.DBUtils;
@@ -19,18 +15,25 @@ public class Edit extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         String name = request.getParameter("name");
-        String prize = request.getParameter("prize");
+        String price = request.getParameter("price");
         String author = request.getParameter("Author");
+        String bookCount = request.getParameter("bookCount");
+        System.out.println(id);
         System.out.println(name);
-        System.out.println(prize);
+        System.out.println(price);
         System.out.println(author);
+        System.out.println(bookCount);
 
-        HashMap<String, Book> list2 = (HashMap<String, Book>) request.getSession().getAttribute("list2");
-        list2.get(id).setName(String.valueOf(name));
-        list2.get(id).setPrice(Integer.valueOf(prize));
-        list2.get(id).setAuthor(String.valueOf(author));
+        Book book =new Book();
+//        HashMap<String, Book> list2 = (HashMap<String, Book>) request.getSession().getAttribute("list2");
+        book.setName(String.valueOf(name));
+        book.setPrice(Double.valueOf(price));
+        book.setAuthor(String.valueOf(author));
+        book.setBookCount(Integer.valueOf(bookCount));
+//        fortest
+//        System.out.println("update tb_books set name = '"+name+"' ,price = "+price+",Author = '"+author+"' ,bookCount="+bookCount+" where id="+id+"");
 
-        new DBUtils().updateAndDelete("update tb_books set name='"+name+"',set prize = '"+prize+"',set Author = '"+author+"' where id='"+id+"'");
+        new DBUtils().updateAndDelete("update tb_books set name = '"+name+"' ,price = "+price+",Author = '"+author+"' ,bookCount="+bookCount+" where id="+id+"");
         response.getWriter().print("<p>编辑成功！</p>");
         response.setHeader("refresh", "1,url=/javawebeclipseshopcart/bookStorage.jsp");
     }

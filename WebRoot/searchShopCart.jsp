@@ -9,6 +9,24 @@
 <head>
 <meta charset="UTF-8">
 <title>searchShopCart</title>
+	<script>
+		function numAdd() {
+			var num = document.getElementById('bookNum');
+			num.value++;
+		}
+		function numRed() {
+			var num = document.getElementById('bookNum');
+			num.value--;
+		}
+		function judge(){
+			var control_num=document.getElementById("control_num");
+			var num = document.getElementById('bookNum');
+			if (num<=0){
+				alert("It can't")
+			}
+		}
+
+	</script>
 <style type="text/css">
 table {
 	border-collapse: collapse;
@@ -54,7 +72,8 @@ h2 {
 				<c:set value="${coun+1 }" var="coun"></c:set>
 				<td>《${cartBook.name }》</td>
 				<td>${cartBook.price }</td>
-				<td>${cartBook.bookCount }</td>
+				<input type="hidden" id="control_num" value="${param.bookCount}">
+				<td><input type="button" value="-" onclick=numRed()><input type="text" id="bookNum" name="bookNum"  value="${cartBook.bookCount}" style="width:12px"><input type="button" value="+" onclick=numAdd() ></td>
 			</tr>
 		</c:forEach>
 		<tr align="center">

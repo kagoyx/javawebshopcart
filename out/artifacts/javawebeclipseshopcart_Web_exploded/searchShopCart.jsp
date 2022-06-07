@@ -9,6 +9,17 @@
 <head>
 <meta charset="UTF-8">
 <title>searchShopCart</title>
+	<script>
+		function numAdd() {
+			var num = document.getElementById('bookNum');
+			num.value++;
+		}
+		function numRed() {
+			var num = document.getElementById('bookNum');
+			num.value--;
+		}
+
+	</script>
 <style type="text/css">
 table {
 	border-collapse: collapse;
@@ -39,6 +50,7 @@ h2 {
 
 <body>
 <h2 align="center">Shoping Cart</h2>
+	System.out.println(${param.bookCount});
 	<table align="center" border="0" cellpadding="5">
 		<tr align="center">
 			<th>No.</th>
@@ -54,7 +66,8 @@ h2 {
 				<c:set value="${coun+1 }" var="coun"></c:set>
 				<td>《${cartBook.name }》</td>
 				<td>${cartBook.price }</td>
-				<td>${cartBook.bookCount }</td>
+				<input type="hidden" id="control_num" value="${param.bookCount}">
+				<td><input type="button" value="-" onclick=numRed()><input type="text" id="bookNum" name="bookNum"  value="${cartBook.bookCount}" style="width:12px"><input type="button" value="+" onclick=numAdd() ></td>
 			</tr>
 		</c:forEach>
 		<tr align="center">

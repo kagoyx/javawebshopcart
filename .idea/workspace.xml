@@ -10,10 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94666271-85c0-439e-b018-b988263c0ee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebRoot/EditBookInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pers/yus/javaweb/control/Edit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/bookStorage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/bookStorage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/bookStorage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/bookStorage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/EditBookInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/EditBookInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/pers/yus/javaweb/dao/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/pers/yus/javaweb/dao/DBUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/searchShopCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/searchShopCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/EditBookInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/EditBookInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/WEB-INF/classes/pers/yus/javaweb/dao/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/WEB-INF/classes/pers/yus/javaweb/dao/DBUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pers/yus/javaweb/control/AddCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pers/yus/javaweb/control/AddCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pers/yus/javaweb/control/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pers/yus/javaweb/control/Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pers/yus/javaweb/dao/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pers/yus/javaweb/dao/DBUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,17 +86,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,7 +201,11 @@
       <workItem from="1653317968288" duration="57000" />
       <workItem from="1653892274258" duration="1074000" />
       <workItem from="1653911309964" duration="307000" />
-      <workItem from="1654235264366" duration="7347000" />
+      <workItem from="1654235264366" duration="7669000" />
+      <workItem from="1654434911211" duration="2613000" />
+      <workItem from="1654509776903" duration="6239000" />
+      <workItem from="1654523030088" duration="1089000" />
+      <workItem from="1654526501870" duration="5298000" />
     </task>
     <servers />
   </component>
