@@ -46,6 +46,16 @@
             width: 0;
             height: 32px;
         }
+        .register{
+            width: 100%;
+            height: 32px;
+            background: green;
+            border: none;
+            color: white;
+            user-select: none;
+            outline: none;
+            margin-top: 10px;
+        }
 
     </style>
 </head>
@@ -117,7 +127,7 @@ function validate(){
         <br>
         <div class="item">
             <img src="./img/user.png">
-            <input name="account" type="text" placeholder="Please enter phone number" id="phone">
+            <input name="account" type="text" placeholder="Please enter username" id="phone">
         </div>
         <div class="item">
             <img src="./img/pwd.png">
@@ -129,6 +139,11 @@ function validate(){
         </div>
         <br>
         <button type="button" class="login-btn" id="login" onClick="validate()">Sign in</button>
+        <br>
+<%--        <button type="button" class="login-btn" id="register" onClick="validate()">Register</button>--%>
+    </form>
+    <form action="Register.jsp" method="post" onsubmit="return check(this)" style="width: 40%;margin-top:-10px">
+        <input type="submit" class="register" value="Register">
     </form>
 </div>
 

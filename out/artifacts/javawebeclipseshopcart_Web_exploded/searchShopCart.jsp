@@ -13,10 +13,22 @@
 		function numAdd() {
 			var num = document.getElementById('bookNum');
 			num.value++;
+			return num;
 		}
 		function numRed() {
 			var num = document.getElementById('bookNum');
 			num.value--;
+			return num;
+		}
+		function judge(){
+			var control_num=document.getElementById("control_num");
+			var num = document.getElementById('bookNum');
+			if (num<=0){
+				alert("It can't be reduced any more")
+			}else if(num>control_num){
+				alert("Out of stock")
+			}
+			return num;
 		}
 
 	</script>
@@ -50,7 +62,6 @@ h2 {
 
 <body>
 <h2 align="center">Shoping Cart</h2>
-	System.out.println(${param.bookCount});
 	<table align="center" border="0" cellpadding="5">
 		<tr align="center">
 			<th>No.</th>
@@ -67,7 +78,7 @@ h2 {
 				<td>《${cartBook.name }》</td>
 				<td>${cartBook.price }</td>
 				<input type="hidden" id="control_num" value="${param.bookCount}">
-				<td><input type="button" value="-" onclick=numRed()><input type="text" id="bookNum" name="bookNum"  value="${cartBook.bookCount}" style="width:12px"><input type="button" value="+" onclick=numAdd() ></td>
+				<td><input type="button" value="-" onclick=numRed()><input type="text" id="bookNum" name="bookNum"  value="${cartBook.bookCount}" style="width:23px"><input type="button" value="+" onclick=numAdd() ></td>
 			</tr>
 		</c:forEach>
 		<tr align="center">

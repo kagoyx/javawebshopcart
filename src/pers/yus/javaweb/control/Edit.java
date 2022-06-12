@@ -18,11 +18,11 @@ public class Edit extends HttpServlet {
         String price = request.getParameter("price");
         String author = request.getParameter("Author");
         String bookCount = request.getParameter("bookCount");
-        System.out.println(id);
-        System.out.println(name);
-        System.out.println(price);
-        System.out.println(author);
-        System.out.println(bookCount);
+//        System.out.println(id);
+//        System.out.println(name);
+//        System.out.println(price);
+//        System.out.println(author);
+//        System.out.println(bookCount);
 
         Book book =new Book();
 //        HashMap<String, Book> list2 = (HashMap<String, Book>) request.getSession().getAttribute("list2");
