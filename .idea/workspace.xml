@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94666271-85c0-439e-b018-b988263c0ee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebRoot/Register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pers/yus/javaweb/control/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/Submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/Submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/searchShopCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/searchShopCart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/Submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/Submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/WEB-INF/classes/pers/yus/javaweb/control/Edit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/searchShopCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/javawebeclipseshopcart_Web_exploded/searchShopCart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pers/yus/javaweb/control/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pers/yus/javaweb/control/Edit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/项目介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/项目介绍.md" afterDir="false" />
-    </list>
+    <list default="true" id="94666271-85c0-439e-b018-b988263c0ee5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +208,7 @@
       <workItem from="1654526501870" duration="5298000" />
       <workItem from="1654699901562" duration="591000" />
       <workItem from="1654777967920" duration="4372000" />
-      <workItem from="1654948824232" duration="17316000" />
+      <workItem from="1654948824232" duration="18799000" />
     </task>
     <servers />
   </component>
